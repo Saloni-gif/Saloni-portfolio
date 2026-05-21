@@ -1,0 +1,232 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0a0f1f;
+  color:white;
+  font-family:Arial,sans-serif;
+}
+
+section{
+  padding:100px 10%;
+}
+
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:rgba(0,0,0,0.3);
+
+  backdrop-filter:blur(10px);
+
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+
+  color:#4cc9f0;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+
+  list-style:none;
+}
+
+.nav-links a{
+
+ text-decoration:none;
+
+ color:white;
+
+ font-size:18px;
+
+ transition:.3s;
+}
+
+.nav-links a:hover{
+
+color:#4cc9f0;
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:50px;
+}
+
+.hero-text{
+
+flex:1;
+}
+
+.hero-text h1{
+
+font-size:65px;
+
+margin-bottom:10px;
+}
+
+.hero-text h2{
+
+color:#4cc9f0;
+
+margin-bottom:20px;
+}
+
+.hero-text p{
+
+font-size:20px;
+
+color:#bbb;
+
+margin-bottom:30px;
+}
+
+.btn{
+
+padding:14px 30px;
+
+background:#4cc9f0;
+
+border:none;
+
+border-radius:10px;
+
+color:black;
+
+font-weight:bold;
+
+cursor:pointer;
+
+text-decoration:none;
+}
+
+.hero-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+}
+
+.hero-image img{
+
+width:320px;
+
+height:320px;
+
+border-radius:50%;
+
+border:5px solid #4cc9f0;
+
+object-fit:cover;
+
+box-shadow:0 0 40px #4cc9f0;
+}
+
+.title{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+color:#4cc9f0;
+}
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+}
+
+.skill-card{
+
+padding:30px;
+
+background:#111827;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.3s;
+}
+
+.skill-card:hover{
+
+transform:translateY(-8px);
+
+background:#1e293b;
+}
+
+.projects{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+}
+
+.project-card{
+
+background:#111827;
+
+padding:30px;
+
+border-radius:20px;
+
+transition:.3s;
+}
+
+.project-card:hover{
+
+transform:scale(1.05);
+}
+
+.contact{
+
+text-align:center;
+}
+
+footer{
+
+padding:30px;
+
+text-align:center;
+
+background:#020617;
+
+color:#aaa;
+}
