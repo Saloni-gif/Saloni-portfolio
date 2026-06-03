@@ -7,28 +7,31 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import "./App.css";
-
 function App() {
-  return (
-    <>
-      <Navbar />
 
-      <Hero />
+return (
 
-      <About />
+<>
 
-      <Skills />
+<Navbar />
 
-      <Projects />
+<Hero />
 
-      <Resume />
+<About />
 
-      <Contact />
+<Skills />
 
-      <Footer />
-    </>
-  );
+<Projects />
+
+<Resume />
+
+<Contact />
+
+<Footer />
+</>
+
+);
+
 }
 
 export default App;

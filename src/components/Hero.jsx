@@ -1,4 +1,14 @@
+import "./Hero.css"
+
 import profile from "../assets/profile.jpg"
+
+import {
+
+motion
+
+}
+
+from "framer-motion"
 
 function Hero(){
 
@@ -6,42 +16,93 @@ return(
 
 <section className="hero">
 
-<div className="hero-text">
+<div className="hero-grid">
 
-<h1>
+<div className="hero-left">
+
+<motion.p
+
+initial={{opacity:0,y:30}}
+
+animate={{opacity:1,y:0}}
+
+transition={{duration:.8}}
+
+className="intro"
+
+>
+
+Hi, I'm
+
+</motion.p>
+
+<motion.h1
+
+initial={{opacity:0,x:-50}}
+
+animate={{opacity:1,x:0}}
+
+transition={{duration:.9}}
+
+>
 
 Saloni Verma
 
-</h1>
+</motion.h1>
 
-<h2>
+<motion.h2
+
+initial={{opacity:0}}
+
+animate={{opacity:1}}
+
+transition={{delay:.4}}
+
+>
 
 Frontend Developer
 
-</h2>
+</motion.h2>
 
 <p>
 
-Building beautiful modern web experiences with React
+Building modern responsive web experiences with React and JavaScript.
 
 </p>
 
-<a
-href="#projects"
-className="btn"
->
+<div className="hero-buttons">
+
+<button>
 
 View Projects
+
+</button>
+
+<a href="#resume">
+
+Resume
 
 </a>
 
 </div>
 
-<div className="hero-image">
+</div>
+
+<div className="hero-right">
+
+<div className="profile-glow">
 
 <img
+
 src={profile}
+
+alt="profile"
+
 />
+
+</div>
+
+</div>
 
 </div>
 
