@@ -75,22 +75,23 @@ live:"#"
 {
 title:"Weather Dashboard",
 
-featured:false,
+featured:true,
 
 description:
-"Real-time weather application displaying current weather conditions using API integration and responsive design.",
+"Modern weather dashboard built with React and Weatherbit API. Displays real-time weather data including temperature, humidity, wind speed, AQI, UV Index, visibility, cloud cover, and responsive glassmorphism UI design.",
 
 tech:[
 "React",
-"Weather API",
-"JavaScript"
+"Vite",
+"Weatherbit API",
+"CSS3"
 ],
 
 image:weatherdashboard,
 
-github:"https://github.com/Saloni-gif",
+github:"https://github.com/Saloni-gif/weather-dashboard-react",
 
-live:"#"
+live:"https://weather-dashboard-react-eight.vercel.app/"
 }
 
 ];
@@ -118,10 +119,11 @@ const extraProjects = [
   },
 
   {
-    title: "Calculator App",
-    description: "Modern calculator application built using React.",
-    tech: ["React", "JavaScript"],
-    github: "https://github.com/Saloni-gif"
+    title: "Calculator Pro",
+    description: "A modern React calculator featuring keyboard support, local storage history, dark/light mode, responsive design, and an intuitive glassmorphism UI.",
+    tech: ["React", "JavaScript", "CSS3", "Local Storage"],
+    github: "https://github.com/Saloni-gif/my-react-calculator.git",
+     live: "https://my-react-calculator-nine.vercel.app/"
   }
   
 ];
@@ -178,21 +180,27 @@ function Projects() {
 
               <div className="project-buttons">
 
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
+               <div className="project-links">
 
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noreferrer"
+    className="project-link"
+  >
+    View Code
+  </a>
+
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noreferrer"
+    className="project-link live"
+  >
+    Live Demo
+  </a>
+
+</div>
 
               </div>
 
@@ -240,14 +248,29 @@ function Projects() {
 
                 </div>
 
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="small-github-btn"
-                >
-                  View Code
-                </a>
+                <div className="extra-buttons">
+
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noreferrer"
+    className="small-github-btn"
+  >
+    View Code
+  </a>
+
+  {project.live && (
+    <a
+      href={project.live}
+      target="_blank"
+      rel="noreferrer"
+      className="small-live-btn"
+    >
+      Live Demo
+    </a>
+  )}
+
+</div>
 
               </div>
 
