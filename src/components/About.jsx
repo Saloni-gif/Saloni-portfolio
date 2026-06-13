@@ -30,16 +30,16 @@ function About() {
           </h3>
 
           <p>
-            Frontend Developer passionate about building
-            beautiful, responsive and user-friendly web
-            applications using React, JavaScript and
-            modern UI design principles.
+            Frontend Developer with experience building responsive websites and user-focused web applications using React, JavaScript, WordPress and modern UI principles. I am passionate about creating intuitive digital experiences that balance functionality, usability and visual appeal.
           </p>
 
           <p>
-            I enjoy transforming ideas into interactive
-            digital experiences while focusing on
-            performance, accessibility and clean code.
+            Along with frontend development, I have a
+            strong interest in UI/UX design, responsive
+            layouts, visual hierarchy and user-centered
+            design. I enjoy transforming ideas into
+            engaging web experiences while focusing on
+            accessibility, performance and clean code.
           </p>
 
           <div className="about-cards">

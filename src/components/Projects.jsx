@@ -13,21 +13,21 @@ title:"Creative Flower Crafts",
 
 featured:true,
 
-description:"Built a responsive ecommerce flower store with modern UI, product showcases, category navigation and mobile-first design principles.",
-
+description:"Designed and developed a responsive e-commerce website for handcrafted flower bouquets and gift hampers. Focused on intuitive navigation, product discovery, visual hierarchy, shopping cart functionality and seamless user experiences across desktop, tablet and mobile devices while applying modern UI/UX principles.",
 
 tech:[
 "HTML",
 "CSS",
 "JavaScript",
-"Responsive Design"
+"Responsive Design",
+"UI/UX"
 ],
 
 image:flowercraft,
 
-github:"#",
+github:"https://github.com/Saloni-gif/creative-flower-crafts.git",
 
-live:"#"
+live:"https://saloni-gif.github.io/creative-flower-crafts/"
 },
 
 {
@@ -36,40 +36,43 @@ title:"Golden Bean",
 featured:true,
 
 description:
-"Designed and developed a premium coffee brand website featuring modern layouts, engaging visuals and responsive user experiences.",
+"Designed and developed a premium coffee brand website focused on storytelling, visual appeal and user engagement. Implemented responsive layouts, clear content hierarchy and modern UI principles to create an immersive brand experience across all devices.",
 
 tech:[
 "React",
-"CSS",
-"Responsive Design"
+"Weatherbit API",
+"Responsive Design",
+"UI Design"
 ],
 
 image:goldenbean,
 
-github:"#",
+github:"https://github.com/Saloni-gif/golden-bean-website.git",
 
-live:"#"
+live:"https://golden-bean-website.vercel.app/"
 },
 
 {
-title:"Movie Search App",
+title:"Movie Search Pro",
 
-featured:false,
+featured:true,
 
 description:
-"Search and discover movies using the OMDB API with dynamic search functionality and movie information display.",
+"Developed an interactive movie discovery platform using React and the OMDb API. Focused on fast search experiences, intuitive navigation, responsive design, error handling and user-friendly content presentation through a modern interface.",
 
 tech:[
-"React",
-"OMDB API",
-"JavaScript"
+"HTML",
+"CSS",
+"JavaScript",
+"Responsive Design",
+"UI Design"
 ],
 
 image:moviesearch,
 
-github:"#",
+github:"https://github.com/Saloni-gif/movie-search-pro",
 
-live:"#"
+live:"https://movie-search-pro-virid.vercel.app/"
 },
 
 {
@@ -78,13 +81,12 @@ title:"Weather Dashboard",
 featured:true,
 
 description:
-"Modern weather dashboard built with React and Weatherbit API. Displays real-time weather data including temperature, humidity, wind speed, AQI, UV Index, visibility, cloud cover, and responsive glassmorphism UI design.",
-
+"Built a responsive weather dashboard delivering real-time weather insights through a clean and intuitive interface. Designed data-rich layouts that improve readability while presenting temperature, AQI, UV Index, humidity and weather analytics in an accessible format.",
 tech:[
 "React",
-"Vite",
 "Weatherbit API",
-"CSS3"
+"Responsive Design",
+"UI Design"
 ],
 
 image:weatherdashboard,
@@ -97,25 +99,32 @@ live:"https://weather-dashboard-react-eight.vercel.app/"
 ];
 
 const extraProjects = [
-  {
-    title: "Authentication App",
-    description: "Login and authentication flow with protected routes.",
-    tech: ["React", "React Router"],
-    github: "https://github.com/Saloni-gif"
-  },
 
   {
     title: "Quiz App",
-    description: "Interactive quiz application with score tracking.",
-    tech: ["React", "JavaScript"],
-    github: "https://github.com/Saloni-gif"
+    description:
+    "Built an interactive quiz platform featuring dynamic question rendering, score tracking, instant feedback and responsive user interfaces designed to enhance user engagement and learning experiences.",
+    tech:[
+  "React",
+  "JavaScript",
+  "Responsive Design"
+],
+    github: "https://github.com/Saloni-gif/react-quiz-app.git",
+    live: "https://react-quiz-app-henna-phi.vercel.app/"
   },
 
   {
-    title: "React Form Validation",
-    description: "Dynamic forms with custom validation rules.",
-    tech: ["React", "Validation"],
-    github: "https://github.com/Saloni-gif"
+    title: "User Registration System",
+    description:
+"Developed a comprehensive user registration system featuring real-time form validation, password confirmation checks, input handling, date selection and user-friendly error prevention. Focused on usability, form accessibility and responsive design.",
+   tech: [
+  "React",
+  "JavaScript",
+  "Form Validation",
+  "Responsive Design"
+],
+    github: "https://github.com/Saloni-gif/user-registration-system.git",
+    live: "https://user-registration-system-zeta.vercel.app/"
   },
 
   {

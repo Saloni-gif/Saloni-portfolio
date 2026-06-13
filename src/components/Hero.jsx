@@ -60,14 +60,13 @@ transition={{delay:.4}}
 
 >
 
-Frontend Developer
+Web Developer &
+UI/UX Enthusiast
 
 </motion.h2>
 
 <p>
-
-Building modern responsive web experiences with React and JavaScript.
-
+Building responsive websites, user-focused digital experiences, and modern web solutions through development, design, and creative problem-solving.
 </p>
 
 <div className="hero-buttons">

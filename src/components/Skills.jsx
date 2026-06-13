@@ -1,153 +1,133 @@
 import "./Skills.css";
 
 import {
- FaHtml5,
- FaCss3Alt,
- FaJs,
- FaReact,
- FaGitAlt,
- FaFigma
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaFigma
 } from "react-icons/fa";
 
 function Skills() {
 
-const skills = [
+  const skills = [
 
-{
-icon:<FaHtml5 />,
-name:"HTML",
-desc:"Semantic and accessible web structures",
-level:9
-},
+    {
+      icon: <FaHtml5 />,
+      name: "HTML",
+      desc: "Semantic, accessible and SEO-friendly web structures",
+      level: 9
+    },
 
-{
-icon:<FaCss3Alt />,
-name:"CSS",
-desc:"Responsive layouts and premium UI styling",
-level:9
-},
+    {
+      icon: <FaCss3Alt />,
+      name: "CSS",
+      desc: "Responsive layouts, modern UI styling and mobile-first design",
+      level: 9
+    },
 
-{
-icon:<FaJs />,
-name:"JavaScript",
-desc:"Interactive modern frontend development",
-level:8
-},
+    {
+      icon: <FaJs />,
+      name: "JavaScript",
+      desc: "Interactive user experiences and dynamic web applications",
+      level: 8
+    },
 
-{
-icon:<FaReact />,
-name:"React",
-desc:"Component architecture and SPA development",
-level:8
-},
+    {
+      icon: <FaReact />,
+      name: "React",
+      desc: "Component-based frontend development and SPA architecture",
+      level: 8
+    },
 
-{
-icon:<FaGitAlt />,
-name:"Git",
-desc:"Version control and collaboration",
-level:7
-},
+    {
+      icon: <FaGitAlt />,
+      name: "Git",
+      desc: "Version control, collaboration and project management",
+      level: 7
+    },
 
-{
-icon:<FaFigma />,
-name:"UI Design",
-desc:"Wireframes and visual design systems",
-level:7
-}
+    {
+      icon: <FaFigma />,
+      name: "UI/UX Design",
+      desc: "Responsive design, visual hierarchy, usability principles and user-centered interfaces",
+      level: 7
+    }
 
-];
+  ];
 
-return (
+  return (
 
-<section
-id="skills"
-className="skills"
->
+    <section
+      id="skills"
+      className="skills"
+    >
 
-<h2 className="skills-title">
+      <h2 className="skills-title">
+        My Skills
+      </h2>
 
-My Skills
+      <div className="skills-grid">
 
-</h2>
+        {skills.map((skill, index) => (
 
-<div className="skills-grid">
+          <div
+            key={index}
+            className="skill-card"
+          >
 
-{skills.map((skill,index)=>(
+            <div className="skill-top">
 
-<div
-key={index}
-className="skill-card"
->
+              <div
+                className="skill-icon"
+              >
+                {skill.icon}
+              </div>
 
-<div className="skill-top">
+              <div>
 
-<div
-className="skill-icon"
->
+                <h3>
+                  {skill.name}
+                </h3>
 
-{skill.icon}
+                <p>
+                  {skill.desc}
+                </p>
 
-</div>
+              </div>
 
-<div>
+            </div>
 
-<h3>
+            <div
+              className="dots"
+            >
 
-{skill.name}
+              {[...Array(10)].map((_, i) => (
 
-</h3>
+                <span
+                  key={i}
+                  className={
+                    i < skill.level
+                      ? "dot active"
+                      : "dot"
+                  }
+                >
+                </span>
 
-<p>
+              ))}
 
-{skill.desc}
+            </div>
 
-</p>
+          </div>
 
-</div>
+        ))}
 
-</div>
+      </div>
 
-<div
-className="dots"
->
+    </section>
 
-{
-
-[...Array(10)]
-
-.map((_,i)=>(
-
-<span
-
-key={i}
-
-className={
-i < skill.level
-? "dot active"
-: "dot"
-}
-
->
-
-</span>
-
-))
-
-}
-
-</div>
-
-</div>
-
-))
-
-}
-
-</div>
-
-</section>
-
-);
+  );
 
 }
 
