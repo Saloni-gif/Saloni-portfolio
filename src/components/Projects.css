@@ -2,7 +2,7 @@
 
 background:#030312;
 
-padding:120px 8%;
+padding: 60px 8% 30px;
 
 color:white;
 
@@ -182,7 +182,7 @@ transform:translateY(-5px);
 
 .view-more {
   display: block;
-  margin: 60px auto;
+  margin: 20px auto;
   padding: 16px 40px;
 
   background: linear-gradient(
@@ -402,4 +402,67 @@ font-size:.85rem;
 .small-live-btn:hover {
   transform: translateY(-3px);
   opacity: 0.9;
+}
+
+@media(max-width:900px){
+
+.projects-container{
+gap:70px;
+}
+
+.project-card,
+.reverse{
+flex-direction:column;
+gap:30px;
+}
+
+}
+
+@media(max-width:480px){
+
+.projects{
+padding:40px 20px;
+margin-top:-30px;
+}
+.projects h2{
+font-size:2.5rem;
+margin-bottom:40px;
+}
+.project-content h3{
+font-size:1.5rem;
+}
+.project-content p{
+    font-size:0.95rem;
+    line-height:1.7;
+  }
+.project-links{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.project-link{
+width:auto;
+padding:12px 20px;
+text-align:center;
+}
+.project-links{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  gap:12px;
+  justify-content:center;
+}
+.featured{
+font-size:.7rem;
+padding:6px 14px;
+}
+.extra-projects{
+grid-template-columns:1fr;
+}
+.project-image img{
+display:block;
+aspect-ratio:16/9;
+object-fit:cover;
+}
 }

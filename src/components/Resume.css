@@ -1,5 +1,5 @@
 .resume{
-  padding:120px 8%;
+  padding:60px 8%;
   background:#030312;
 }
 
@@ -85,4 +85,51 @@
 
   box-shadow:
   0 0 25px rgba(39,215,255,.5);
+}
+
+@media(max-width:768px){
+
+  .resume{
+    padding:80px 20px;
+  }
+
+  .resume-card{
+    padding:50px 30px;
+  }
+
+  .resume-card h2{
+    font-size:2.5rem;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .resume{
+    padding:30px 20px;
+  }
+
+  .resume-card{
+    padding:35px 20px;
+    border-radius:20px;
+  }
+
+  .resume-card h2{
+    font-size:2rem;
+    margin-bottom:20px;
+  }
+
+  .resume-card p{
+    font-size:1rem;
+    line-height:1.7;
+    margin-bottom:30px;
+  }
+
+  .resume-btn{
+    width:100%;
+    max-width:250px;
+    padding:14px 20px;
+    font-size:15px;
+  }
+
 }

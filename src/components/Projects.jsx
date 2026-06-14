@@ -40,7 +40,7 @@ description:
 
 tech:[
 "React",
-"Weatherbit API",
+"CSS",
 "Responsive Design",
 "UI Design"
 ],
